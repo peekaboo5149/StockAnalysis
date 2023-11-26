@@ -94,7 +94,7 @@ public class RawTradeDataEmitter {
         private final AtomicBoolean isConnected = new AtomicBoolean(false);
 
 
-        private MyWebSocketClient() throws URISyntaxException, IOException {
+        private MyWebSocketClient() throws URISyntaxException {
             super(new URI(Utils.getEndpoint()));
         }
 

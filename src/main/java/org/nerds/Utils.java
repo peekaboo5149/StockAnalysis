@@ -21,7 +21,7 @@ public class Utils {
         }
     }
 
-    public static String getEndpoint() throws IOException {
+    public static String getEndpoint() {
         return getProperty("endpoint", "Server Endpoint is null");
     }
 
