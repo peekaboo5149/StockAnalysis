@@ -22,7 +22,7 @@ public class KafkaConnection {
     private KafkaConnection() {
         // Initialize KafkaProducer
         Properties producerProps = new Properties();
-        String bootstrapServers = "192.168.29.226:9092";
+        String bootstrapServers = Utils.getBrokerString();
         producerProps.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
         producerProps.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         producerProps.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, ByteArraySerializer.class.getName());
